@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduction to grid</title>
+   <style>
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(5,1fr);
+        gap: 10px;
+        width: 600px;
+        height: 600px;
+        border: 2px solid black;
+        text-align: center;
+    }
+    .item{
+        border: 1px solid black;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        font-family: Arial,sans-serif;
+        font-size: 16px;
+        color: white;
+        display: flex;
+        
+    }
+    .item1 { background-color: lightblue;
+        grid-column: 1/7;  
+        grid-row: 1/2;
+    }
+    .item2{background-color: lightgreen;
+        grid-column: 1/4; 
+        grid-row: 2/4; 
+    }
+    .item3{background-color: lightcoral;
+        grid-column: 4/7; 
+        grid-row: 2/4; 
+
+    }
+    .item4{background-color: lightgoldenrodyellow;}
+    .item5 {background-color: lightpink;}
+    .item6 {background-color: lightgray;}
+
+    .item4 {background-color: rgb(230, 230, 11);
+    grid-column: 1/4; 
+    grid-row: 4/5; 
+    }
+     .item5 {background-color: lightpink;
+      grid-column:  4/7; 
+      grid-row: 4/5; 
+    }
+    .itemm6 { background-color: lightgray;
+    grid-column: 1/7 ;
+    grid-row : 5/6; 
+    }
+      
+
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class= "item item1" > Header</div>
+        <div class="item item2"> Side Content</div>
+        <div class="item item3"> Main Content</div>
+        <div class="item item4"> Content 1</div>
+        <div class="item item5">Content 2</div>
+        <div class="item item6">Footer</div>
+
+    </div>
+    
+</body>
+</html>
